@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon --exec ts-node src/main.ts",
     "build": "tsc",
-    "start": "node src/main.js"
+    "start": "ts-node src/main.ts"
   },
   "keywords": [],
   "author": "",

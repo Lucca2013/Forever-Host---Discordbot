@@ -52,7 +52,7 @@ client.on("messageCreate", async (message) => {
         { name: '`/bot ping`', value: 'Displays the latency of the bot and the Minecraft server.', inline: false }
       )
       .setTimestamp()
-      .setFooter({ text: 'Version: v1.0.0 | Developed by [Your Name/Tag]' });
+      .setFooter({ text: 'Version: v1.0.0 | Developed by Lucca2013' });
     message.channel.send({ embeds: [foreverHostEmbed] });
   }
   if (message.content === "/bot ping") {
