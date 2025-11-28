@@ -1,0 +1,4 @@
+[2025-11-28T18:41:23.075Z] [INFO] Conected: semcriativo-5AOJ.aternos.me:60774 v=1.21.8
+[2025-11-28T19:04:04.101Z] [ERROR] Connection error semcriativo-5AOJ.aternos.me:60774 -> read ECONNRESET
+[2025-11-28T19:05:40.461Z] [INFO] Conected: semcriativo-5AOJ.aternos.me:60774 v=1.21.8
+[2025-11-28T19:06:39.852Z] [INFO] Conected: semcriativo-5AOJ.aternos.me:60774 v=1.21.8
