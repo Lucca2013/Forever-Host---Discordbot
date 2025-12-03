@@ -91,14 +91,12 @@ export default async function createBot(
             uptimeMs: Date.now() - entry.startTime
         }, owner));
 
-        entry.afkInterval = setInterval(() => {
-            if (bot.entity) {
-                bot.look(
-                    Math.random() * Math.PI * 2,
-                    (Math.random() * 0.5) - 0.25
-                );
-            }
-        }, 8000);
+        setInterval(() => {
+            bot.setControlState("jump", true);
+            setTimeout(() => {
+                bot.setControlState("jump", false);
+            }, 300);
+        }, 10000);
     });
 
     bot.on("kicked", (reason) => {
@@ -152,8 +150,8 @@ function cleanup(botKey: string) {
 
     console.log(`[BOT] Cleanup @ ${botKey}`);
 
-    try { entry.bot.removeAllListeners(); } catch (_) {}
-    try { entry.bot.quit(); } catch (_) {}
+    try { entry.bot.removeAllListeners(); } catch (_) { }
+    try { entry.bot.quit(); } catch (_) { }
 
     if (entry.afkInterval) clearInterval(entry.afkInterval);
 
